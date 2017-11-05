@@ -7,7 +7,10 @@
 		<link rel="stylesheet" href="./bt.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./libs/owl.carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./media.css">
 	</head>
 	<body>
 		<div class="scroll-to-top"><a href="#home" class="scroll-to-target"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
@@ -40,6 +43,12 @@
 								<div class="service-button button-search">
 									<input type="text" name="search" placeholder="поиск">
 								</div>
+								<nav class="mobile-nav">
+									<a href="index.html">Главная</a>
+									<a href="#">Блог</a>
+									<a href="#">О нас</a>
+									<a href="contact.html">Контакты</a>
+								</nav>
 							</div>
 						</div>
 					</div>
@@ -100,6 +109,39 @@
 							</section>
 							<section class="sidebar-widget">
 								<!-- Slider -->
+								<div class="slider-container">
+									<div class="widget-slider_nav">
+										<div class="btn-nav nav-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+										<div class="btn-nav nav-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+									</div>
+									<div id="widget-slider" class="widget-slider owl-carousel">
+									<div class="slider-item">
+										<a href="img/slides/1.jpg" data-fancybox="widget-slider">
+											<img src="img/slides/1.jpg" alt="slide">
+										</a>
+										<span class="slide-description">
+											Название слайда <span class="item-counter"></span>
+										</span>
+									</div>
+									<div class="slider-item">
+										<a href="img/slides/1.jpg" data-fancybox="widget-slider">
+											<img src="img/slides/1.jpg" alt="slide">
+										</a>
+										<span class="slide-description">
+											Название слайда <span class="item-counter"></span>
+										</span>
+									</div>
+									<div class="slider-item">
+										<a href="img/slides/1.jpg" data-fancybox="widget-slider">
+											<img src="img/slides/1.jpg" alt="slide">
+										</a>
+										<span class="slide-description">
+											Название слайда <span class="item-counter"></span>
+										</span>
+									</div>
+								</div>
+								</div>
+
 							</section>
 						</aside>
 					</div>
@@ -154,6 +196,9 @@
 		</footer>
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="./libs/owl.carousel/owl.carousel.min.js"></script>
+		<script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+		<script src="./js/app.js"></script>
 	</body>
 </html>

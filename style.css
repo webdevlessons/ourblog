@@ -97,6 +97,10 @@ h3 {
 	right: 0;
 }
 
+.mobile-nav {
+	display: none;
+}
+
 .service-button {
 	width: 50px;
 	height: 50px;
@@ -110,6 +114,10 @@ h3 {
 
 .service-button:not(:last-child) {
 	margin-right: 1px;
+}
+
+.button-humburger {
+	z-index: 1;
 }
 
 .button-humburger .main-nav {
@@ -171,6 +179,7 @@ h3 {
 	background-image: url(./img/icons/loupe.png);
 	background-position: center center;
 	background-repeat: no-repeat;
+	z-index: 1;
 }
 
 .button-search input {
@@ -261,7 +270,7 @@ h3 {
 
 .sidebar-nav {
 	text-align: right;
-	padding: 0 27px 24px 0;
+	padding: 0 27px 24px 27px;
 }
 
 .sidebar-nav h3 {
@@ -400,13 +409,19 @@ h3 {
 	content: ">";
 }
 
+/* Scrtoll to top */
+
 .scroll-to-top {
 	position: fixed;
 	bottom: 0;
 	right: 0;
+	z-index: 999;
+	display: none;
 }
 
-/* Scrtoll to top */
+.scroll-to-top.visible {
+	display: block;
+}
 
 .scroll-to-top a.scroll-to-target{
 	display: -webkit-flex;
@@ -434,6 +449,7 @@ h3 {
 	position: fixed;
 	left: 0;
 	top: 200px;
+	z-index: 999;
 }
 
 .social-widget li {
@@ -535,3 +551,69 @@ h3 {
 	text-align: center;
 }
 
+/* Widget Slider */
+
+.slider-container {
+	position: relative;
+	margin-top: 20px;
+}
+
+.widget-slider {
+	z-index: 1;
+}
+
+.widget-slider_nav {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.btn-nav {
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,.3);
+	cursor: pointer;
+	transition: background .3s ease-in-out;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+
+.btn-nav:hover {
+	background: rgba(0,0,0,.7);
+}
+
+.btn-nav.nav-prev {
+	left: 0;
+	border-radius: 0 4px 4px 0;
+}
+
+.btn-nav.nav-next {
+	right: 0;
+	border-radius: 4px 0 0 4px;
+}
+
+.slide-item {
+	position: relative;
+}
+
+.slide-description {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	color: #fff;
+	background: rgba(0,0,0,.3);
+}
